@@ -239,7 +239,7 @@
                 };
 
                 $.ajax({
-                    url: "/gerar-pdf-medio",
+                    url: "gerar-pdf-medio",
                     type: "POST",
                     data: JSON.stringify(formData),
                     contentType: "application/json",
@@ -286,7 +286,7 @@
                 $("#modalTabela").html('<tr><td colspan="7" class="text-center">Carregando...</td></tr>');
 
                 $.ajax({
-                    url: "/get-habilidades-medio/" + anoSelecionado,
+                    url: "get-habilidades-medio/" + anoSelecionado,
                     type: "GET",
                     success: function(response) {
                         let html = "";
