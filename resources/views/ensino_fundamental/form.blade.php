@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Planejamento de Aula</title>
+    <title>PLANEJAMENTO ANUAL - 2024</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -16,12 +16,12 @@
 </head>
 
 <body>
-    <div class="container mt-4">
-        <h1 class="text-center mb-4">Planejamento de Aula</h1>
+    <div class="container my-4">
+        <h4 class="text-center mb-4">PLANEJAMENTO ANUAL - 2024</h4>
 
         <!-- Cabeçalho -->
         <div class="card mb-4">
-            <div class="card-header bg-primary text-white">Cabeçalho</div>
+            <div class="card-header bg-secondary text-white">Cabeçalho</div>
             <div class="card-body">
                 <div class="row">
                     <div class="col-md-6 mb-3">
@@ -45,7 +45,7 @@
                         <select id="ano" class="form-control">
                             <option value="">Selecione um ano</option>
                             @foreach ($anos as $ano)
-                                <option value="{{ $ano->ano_faixa }}">{{ $ano->ano_faixa }}</option>
+                            <option value="{{ $ano->ano_faixa }}">{{ $ano->ano_faixa }}</option>
                             @endforeach
                         </select>
                     </div>
@@ -71,68 +71,68 @@
 
         <!-- Trimestres -->
         <div class="card mb-4">
-            <div class="card-header bg-success text-white">Trimestres</div>
+            <div class="card-header bg-secondary text-white">Trimestres</div>
             <div class="card-body">
                 @for ($i = 1; $i <= 4; $i++)
                     <div class="mb-3">
-                        <h5>{{ $i }}º Trimestre</h5>
-                        <button class="btn btn-outline-primary btn-sm btn-trimestre"
-                            data-trimestre="{{ $i }}">Adicionar Projetos Integradores</button>
-                        <table class="table table-bordered mt-3" id="tabela-trimestre-{{ $i }}"
-                            style="display:none;">
-                            <thead>
-                                <tr>
-                                    <th>Selecionar</th>
-                                    <th>Componente</th>
-                                    <th>Práticas de Linguagem</th>
-                                    <th>Objetos de Conhecimento</th>
-                                    <th>Habilidades</th>
-                                </tr>
-                            </thead>
-                            <tbody id="modalTabelaTrimestre-{{ $i }}">
-                                <tr>
-                                    <td colspan="5" class="text-center">Nenhum dado encontrado.</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <table class="table table-bordered mt-3" id="itensSelecionados-{{ $i }}"
-                            style="display:none;">
-                            <thead>
-                                <tr>
-                                    <th>Componente</th>
-                                    <th>Práticas de Linguagem</th>
-                                    <th>Objetos de Conhecimento</th>
-                                    <th>Habilidades</th>
-                                </tr>
-                            </thead>
-                            <tbody id="itensTabela-{{ $i }}">
-                                <!-- Itens selecionados serão adicionados aqui -->
-                            </tbody>
-                        </table>
-                    </div>
-                    <hr>
-                @endfor
+                    <h5>{{ $i }}º Trimestre</h5>
+                    <button class="btn btn-outline-primary btn-sm btn-trimestre"
+                        data-trimestre="{{ $i }}">Adicionar Projetos Integradores</button>
+                    <table class="table table-bordered mt-3" id="tabela-trimestre-{{ $i }}"
+                        style="display:none;">
+                        <thead>
+                            <tr>
+                                <th>Selecionar</th>
+                                <th>Componente</th>
+                                <th>Práticas de Linguagem</th>
+                                <th>Objetos de Conhecimento</th>
+                                <th>Habilidades</th>
+                            </tr>
+                        </thead>
+                        <tbody id="modalTabelaTrimestre-{{ $i }}">
+                            <tr>
+                                <td colspan="5" class="text-center">Nenhum dado encontrado.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-bordered mt-3" id="itensSelecionados-{{ $i }}"
+                        style="display:none;">
+                        <thead>
+                            <tr>
+                                <th>Componente</th>
+                                <th>Práticas de Linguagem</th>
+                                <th>Objetos de Conhecimento</th>
+                                <th>Habilidades</th>
+                            </tr>
+                        </thead>
+                        <tbody id="itensTabela-{{ $i }}">
+                            <!-- Itens selecionados serão adicionados aqui -->
+                        </tbody>
+                    </table>
             </div>
+            <hr>
+            @endfor
         </div>
+    </div>
 
-        <!-- Diagnóstico / Perfil de Turma -->
-        <div class="card mb-4">
-            <div class="card-header bg-info text-white">Diagnóstico / Perfil de Turma</div>
-            <div class="card-body">
-                <textarea id="diagnostico" class="form-control" rows="4"></textarea>
-            </div>
+    <!-- Diagnóstico / Perfil de Turma -->
+    <div class="card mb-4">
+        <div class="card-header bg-secondary text-white">Diagnóstico / Perfil de Turma</div>
+        <div class="card-body">
+            <textarea id="diagnostico" class="form-control" rows="4"></textarea>
         </div>
+    </div>
 
-        <div class="card mt-4">
-            <div class="card-header bg-warning text-dark title-referencia">Referências BNCC</div>
-            <div class="card-body" id="referenciasContainer">
-            </div>
+    <div class="card mt-4">
+        <div class="card-header bg-secondary text-white title-referencia">Referências BNCC</div>
+        <div class="card-body" id="referenciasContainer">
         </div>
+    </div>
 
-        <!-- Botão Finalizar -->
-        <div class="text-center">
-            <button class="btn btn-success" id="btnSalvar">Imprimir</button>
-        </div>
+    <!-- Botão Finalizar -->
+    <div class="text-center py-4">
+        <button class="btn btn-success w-100" id="btnSalvar">Imprimir Planejamento</button>
+    </div>
     </div>
 
     <!-- Modal -->
