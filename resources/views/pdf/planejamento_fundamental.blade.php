@@ -8,7 +8,7 @@
             font-family: Arial, sans-serif;
             font-size: 14px;
             text-align: center;
-            margin: 20px;
+            margin: 10px;
         }
 
         h1,
@@ -53,7 +53,7 @@
 
 <body>
 
-    <h4 class="text-center mb-4">PLANEJAMENTO ANUAL - 2024</h4>
+    <h4 class="text-center mb-4">PLANEJAMENTO ANUAL</h4>
 
     <div class="section">
         <p><strong>Curso:</strong> {{ $dados['curso'] }}</p>

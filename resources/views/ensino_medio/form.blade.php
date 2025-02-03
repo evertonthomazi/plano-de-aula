@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLANEJAMENTO ANUAL - 2024</title>
+    <title>PLANEJAMENTO ANUAL</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -17,7 +17,7 @@
 
 <body>
     <div class="container my-4">
-        <h4 class="text-center mb-4">PLANEJAMENTO ANUAL - 2024</h4>
+        <h4 class="text-center mb-4">PLANEJAMENTO ANUAL</h4>
 
         <!-- Cabeçalho -->
         <div class="card mb-4">
@@ -30,15 +30,15 @@
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="materia" class="form-label">Matéria:</label>
-                        <input type="text" id="materia" class="form-control" placeholder="Exemplo: MATEMÁTICA">
+                        <input type="text" id="materia" class="form-control" placeholder="Matéria">
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="professor" class="form-label">Professor:</label>
-                        <input type="text" id="professor" class="form-control" placeholder="Exemplo: EVERTON LEITE">
+                        <input type="text" id="professor" class="form-control" placeholder="Nome do Professor">
                     </div>
                     <div class="col-md-3 mb-3">
                         <label for="aulas" class="form-label">Nº Aulas Semanais:</label>
-                        <input type="number" id="aulas" class="form-control" placeholder="Exemplo: 3">
+                        <input type="number" id="aulas" class="form-control" placeholder="Número de aulas">
                     </div>
                     <div class="col-md-3 mb-3">
                         <label for="ano" class="form-label">Ano:</label>
@@ -70,7 +70,7 @@
 
         <!-- Trimestres -->
         <div class="card mb-4">
-            <div class="card-header bg-success text-white">Trimestres</div>
+            <div class="card-header bg-secondary text-white">Trimestres</div>
             <div class="card-body">
                 <!-- Similar to the previous form, add sections for each trimester -->
                 @for ($i = 1; $i <= 3; $i++)
@@ -115,14 +115,14 @@
 
     <!-- Diagnóstico / Perfil de Turma -->
     <div class="card mb-4">
-        <div class="card-header bg-info text-white">Diagnóstico / Perfil de Turma</div>
+        <div class="card-header bg-secondary text-white">Diagnóstico / Perfil de Turma</div>
         <div class="card-body">
             <textarea id="diagnostico" class="form-control" rows="4"></textarea>
         </div>
     </div>
 
     <div class="card mt-4">
-        <div class="card-header bg-warning text-dark title-referencia">Referências BNCC</div>
+        <div class="card-header bg-secondary text-white title-referencia">Referências BNCC</div>
         <div class="card-body" id="referenciasContainer">
         </div>
     </div>

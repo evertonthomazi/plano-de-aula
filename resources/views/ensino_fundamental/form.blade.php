@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PLANEJAMENTO ANUAL - 2024</title>
+    <title>PLANEJAMENTO ANUAL</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
@@ -17,7 +17,7 @@
 
 <body>
     <div class="container my-4">
-        <h4 class="text-center mb-4">PLANEJAMENTO ANUAL - 2024</h4>
+        <h4 class="text-center mb-4">PLANEJAMENTO ANUAL</h4>
 
         <!-- Cabeçalho -->
         <div class="card mb-4">
@@ -30,15 +30,15 @@
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="componente" class="form-label">Componente Curricular:</label>
-                        <input type="text" id="componente" class="form-control" placeholder="Exemplo: GEOGRAFIA">
+                        <input type="text" id="componente" class="form-control" placeholder="Matéria">
                     </div>
                     <div class="col-md-6 mb-3">
                         <label for="professor" class="form-label">Professor:</label>
-                        <input type="text" id="professor" class="form-control" placeholder="Exemplo: EVERTON LEITE">
+                        <input type="text" id="professor" class="form-control" placeholder="Nome do Professor">
                     </div>
                     <div class="col-md-3 mb-3">
                         <label for="aulas" class="form-label">Nº Aulas Semanais:</label>
-                        <input type="number" id="aulas" class="form-control" placeholder="Exemplo: 3">
+                        <input type="number" id="aulas" class="form-control" placeholder="Número de aulas">
                     </div>
                     <div class="col-md-3 mb-3">
                         <label for="ano" class="form-label">Ano:</label>

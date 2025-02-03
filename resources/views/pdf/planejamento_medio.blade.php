@@ -7,7 +7,8 @@
         body {
             font-family: Arial, sans-serif;
             font-size: 14px;
-            margin: 20px;
+            text-align: center;
+            margin: 10px;
         }
 
         h1,
@@ -42,12 +43,17 @@
             border: 1px solid #000;
             border-radius: 5px;
         }
+
+        .divider {
+            border-top: 1px solid #000;
+            margin: 15px 0;
+        }
     </style>
 </head>
 
 <body>
 
-    <h4 class="text-center mb-4">PLANEJAMENTO ANUAL - 2024</h4>
+    <h4 class="text-center mb-4">PLANEJAMENTO ANUAL</h4>
 
     <div class="section">
         <p><strong>Curso:</strong> {{ $dados['curso'] }}</p>
